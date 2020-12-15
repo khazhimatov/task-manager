@@ -1,0 +1,55 @@
+$status-no-done-color: #7d7b05
+$status-done-color: #228a2e
+  
+.table
+  width: 100%
+  margin-bottom: 20px
+  border: 15px solid #F2F8F8
+  border-top: 5px solid #F2F8F8
+  border-collapse: collapse
+  max-width: 1500px
+
+
+.table th
+  font-weight: bold
+  padding: 5px
+  background: #F2F8F8
+  border: none
+  border-bottom: 5px solid #F2F8F8
+
+  &.status
+    width: 150px
+
+  &.history
+    width: 150px
+
+  &.actionsColumn
+    width: 170px
+
+.table td
+  padding: 5px
+  border: none
+  border-bottom: 5px solid #F2F8F8
+
+  > *
+    max-height: 200px
+    overflow-y: auto
+    word-break: break-word
+    white-space: pre-line
+    max-width: 500px
+  
+  .actionButton
+    padding: 3px 5px
+    margin: 5px
+
+  .histryLine
+    display: flex
+    align-items: center
+    font-size: 13px
+
+.statusDone
+  color: $status-done-color
+
+.statusNoDone
+  color: $status-no-done-color
+  

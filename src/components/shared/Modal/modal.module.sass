@@ -1,0 +1,56 @@
+.wrapper
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1000
+
+
+.mask
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 100000
+
+.container
+  position: relative
+  z-index: 100001
+  animation: show
+  animation-duration: 0.3s
+  border: 5px solid #fff
+  border-radius: 5px
+
+@keyframes show
+  0%
+    transform: scale(0.1)
+  
+  100%
+    transform: scale(1)
+  
+
+
+.close
+  border-radius: 50%
+  width: 25px
+  height: 25px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 25px
+  font-weight: 300
+  position: absolute
+  right: -8px
+  top: -8px
+  padding: 0 0 4px 2px
+  font-weight: bold
+  font-size: 30px
+  background: #fff
+  cursor: pointer
+
